@@ -1,0 +1,72 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path" : "pages/explain/explain",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/generate/generate",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/explain-result/explain-result",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/mine/mine",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 配置小程序底部的tab页
+	"tabBar": {
+		"color": "#aaa", // 未选中的颜色
+		"selectedColor": "#ed3321", // 选中的颜色
+		"borderStyle": "black", // 边框的颜色
+		"backgroundColor": "#ffffff", // 底部tab页的背景色
+		"list": [
+			{
+				"pagePath": "pages/index/index", // 首页
+				"iconPath": "static/tabbar/tj.png", // 未选中的图标
+				"selectedIconPath": "static/tabbar/tj-a.png" ,// 选中的图标
+				"text": "起名" // 图标的名称
+			},
+			{
+				"pagePath": "pages/explain/explain", // 第二个tab页
+				"iconPath": "static/tabbar/bg.png", // 未选中的图标
+				"selectedIconPath": "static/tabbar/bg-a.png" ,// 选中的图标
+				"text": "解名" // 图标的名称
+			},
+			{
+				"pagePath": "pages/mine/mine", // 我的tab页
+				"iconPath": "static/tabbar/mine.png", // 未选中的图标
+				"selectedIconPath": "static/tabbar/mine-a.png" ,// 选中的图标
+				"text": "我的" // 图标的名称
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
